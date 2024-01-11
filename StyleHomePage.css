@@ -1,0 +1,753 @@
+@font-face{
+	font-family: 'Allerta_Stencil';
+	src: url('C:/Project/HTML/Learning/Font/Allerta_Stencil/AllertaStencil-Regular.ttf');
+}
+
+body{
+	background-color: #cfcfcf;
+}
+
+/*NAVIGASI*/
+
+.BagianAtas{
+	position: sticky;
+	top: 0px;
+	background: yellow;
+	margin-right: 0px;
+	margin-top: -8px;
+	margin-left: -12px;
+	height: 50px;
+	line-height: 50px;
+	width: 1267px;
+	border-bottom-style: solid;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	border-bottom-color: #F04519;
+  z-index: 1000;
+
+}
+
+.Bagian1{
+	display: inline-block;
+	margin-left: 85px;
+	font-size: 22px;
+}
+
+.Bagian1 a{
+	text-decoration: none;
+	color: black;
+}
+
+.Bagian2{
+	display: inline-block;
+	margin-left: 140px;
+	font-size: 22px;
+}
+
+#pop2{
+  display: block;
+  transform: scale(0);
+  opacity: 0;
+}
+
+#pop2:target{
+  transition: all .5s linear;
+  transform: scale(1);
+  opacity: 1;
+}
+
+#pop4{
+  display: block;
+  transform: scale(0);
+  opacity: 0;
+}
+
+#pop4:target{
+  transition: all .5s linear;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.dropdown {
+	display: inline-block;
+}
+
+.dropdown a{
+	text-decoration: none;
+	color: black;
+}
+
+.isi-dropdown a:hover{
+	color: #fff;
+}
+
+.isi-dropdown {
+	position: absolute;
+	margin-top: -7px;
+  margin-left: -40px;
+	display: none;
+	box-shadow: 0px 8px 16px 0px black;
+	z-index: 1;
+	padding-right: 5px;
+	background-color: rgba(225,225,225, 0.5);
+  backdrop-filter: blur(2px);
+	width: 100px;
+	list-style: none;
+}
+
+.isi-dropdown a{
+	color: blue;
+}
+
+.isi-dropdown a:hover{
+	color: #232323;
+	background: #f3f3f3;
+}
+
+.LogoHome{
+	height: 65px;
+	width: 65px;
+	margin-bottom: -10px;
+}
+
+.Bagian3{
+	position: absolute;
+	display: inline-block;
+	left: 610px;
+	bottom: -30px;
+	background-color: yellow;
+	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+	border-color: #F04519;
+	border-style: solid;
+	box-shadow: 0px 7px 14px 0px;
+}
+
+.Bagian4{
+	display: inline-block;
+	margin-left: 430px;
+	font-size: 22px;
+}
+
+.Bagian4 a{
+	text-decoration: none;
+	color: black;
+}
+
+.Bagian5{
+	display: inline-block;
+	margin-left: 150px;
+	font-size: 22px;
+}
+
+.Bagian6{
+  display: inline-block;
+  margin-left: 50px;
+  font-size: 25px;
+  rotate: 90deg;
+  background-color: #e0e000;
+  text-decoration: none;
+  color: white;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.Bagian6 a{
+  text-decoration: none;
+  color: black;
+}
+
+/** SLIDESHOW **/
+
+.slideshow {
+  list-style-type: none;
+  display: block;
+
+}
+
+.slidefoto{
+  display: inline-block;
+  margin-bottom: 500px;
+
+
+}
+
+.slideshow,
+.slideshow:after { 
+    top: -16px;
+	  position: absolute;
+    width: 1223px;
+    height: 591px;
+    left: 0px;
+    border-bottom-style: solid;
+    border-bottom-color: yellow;
+    border-bottom-width: 10px;
+}
+
+.slideshow li div { 
+	  position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    color: solid;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    opacity: 0;
+    z-index: -1;
+    animation: imageAnimation 60s linear infinite 0s;
+}
+
+ 
+.slideshow li:nth-child(1) div { 
+    background-image: url("foto/IMG_2022-09-13-14-03-32-986.jpg"); 
+    z-index: -1;
+}
+.slideshow li:nth-child(2) div { 
+    background-image: url("insget_foto/smpn.16.kota.cirebon.terbaik_1667769521463.jpg");
+    animation-delay: 12s; 
+    z-index: -2;
+}
+.slideshow li:nth-child(3) div { 
+    background-image: url("insget_foto/smpn.16.kota.cirebon.terbaik_1667770065893.jpg");
+    animation-delay: 24s; 
+    z-index: -3;
+}
+.slideshow li:nth-child(4) div { 
+    background-image: url("insget_foto/smpn.16.kota.cirebon.terbaik_1667770797381.jpg");   
+    animation-delay: 36s;
+}
+.slideshow li:nth-child(5) div { 
+    background-image: url("insget_foto/smpn.16.kota.cirebon.terbaik_1667768199698.jpg");
+    animation-delay: 48s; 
+}
+
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+/*Slidetulisan*/
+
+.slidetitle{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 650px;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 900px;
+  border: 2px solid whitesmoke;
+  opacity: 0;
+  margin-left: 50px;
+  margin-top: 390px;
+  margin-bottom: 100px;
+  animation: titleAnimation 60s linear infinite 0s; 
+}
+
+.slidetulisan li:nth-child(1) div {
+  z-index: -1;
+}
+.slidetulisan li:nth-child(2) div { 
+  z-index: -2;
+    animation-delay: 12s; 
+}
+.slidetulisan li:nth-child(3) div { 
+  z-index: -3;
+    animation-delay: 24s; 
+}
+.slidetulisan li:nth-child(4) div { 
+    animation-delay: 36s; 
+}
+.slidetulisan li:nth-child(5) div { 
+    animation-delay: 48s; 
+}
+
+.slidetitle p{
+  color: white;
+  font-size: 15px;
+}
+
+.slidetitle span{
+  color: yellow;
+  font-size: 20px;
+}
+
+.slidetulisan {
+  list-style-type: none;
+  display: block;
+}
+
+@keyframes titleAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+.ps_isi{
+  color: white;
+  font-size: 25px;
+}
+
+.isi_title{
+  color: white;
+  font-size: 15px;
+}
+
+.judul_title{
+  color: white;
+  font-size: 20px;
+}
+
+
+/*ISI KONTEN*/
+
+.isi{
+
+}
+
+/*SPENAZ NEWS*/
+
+.news{
+  background-color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.judul_news{
+  padding-top: 30px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #F04519;
+  width: 150px;
+  font-size: 20px;
+  margin-left: 40px;
+}
+
+.gambar_berita{
+  display: flex;
+  margin-left: -50px;
+}
+
+.gambar_berita1{
+  padding-left: 30px;
+  width: 250px;
+  margin-left: 60px;
+}
+
+.gambar_berita1 div{
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  padding: 5px;
+}
+
+.gambar_berita1 img{
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.gambar_berita1 img:hover{
+  border: 1px solid black;
+  box-shadow: 0px 0px 20px black;
+}
+
+.gambar_berita1 video{
+    position: absolute;
+    float: left;
+    margin-left: -250px;
+    padding-right: 20px;
+    height: 150px;
+    width: 250px;
+    object-fit: cover;
+    opacity: 0%;
+}
+
+.gambar_berita1 video:hover{
+    opacity: 100%;
+    transition: opacity 3s;
+}
+
+.gambar_berita1 div b a{
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.gambar_berita1 div b a:hover{
+  font-size: 15px;
+  text-decoration: underline;
+  color: black;
+}
+
+.gambar_berita1 div p{
+  font-size: 14px;
+}
+
+.gambar_berita1 div p a{
+  text-decoration: none;
+}
+
+.gambar_berita1 div p a:hover{
+  text-decoration: underline;
+}
+
+.gambar_berita1 div span{
+  font-size: 13px;
+  color: blue;
+}
+
+.news div a span{
+  background-color: yellow;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.news div a span:hover{
+  background-color: white;
+  color: black;
+  width: 150px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.news .tombol_news a{
+  text-decoration: none;
+  color: black;
+}
+
+.tombol_news{
+  margin-left: 537px;
+  margin-top: 30px;
+}
+
+
+/*PENDAFTARAN SISWA*/
+
+.pendaftaran_siswa{
+  background-image: url(insget_foto/IMG-20221107-WA0004.jpg);
+  margin-bottom: 0px;
+  margin-left: -14px;
+  margin-right: -5px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 100%;
+
+}
+
+.pendaftaran_siswa h4{
+  font-size: 25px;
+  border-bottom-color: #F04519;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  padding-bottom: 10px;
+  width: 270px;
+  text-align: center;
+  color: white;
+  margin-left: 55px;
+}
+
+.pendaftaran_siswa span{
+  font-size: 20px;
+  color: white;
+}
+
+.pendaftaran_siswa div a{
+  text-decoration: none;
+  color: white;
+}
+
+.pendaftaran_siswa div{
+  margin-top: 30px;
+}
+
+.pendaftaran_siswa div a span b{
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  border: 2px solid white;
+  margin-left: 50px;
+}
+
+.pendaftaran_siswa div a span b:hover{
+  background-color: white;
+  color: black;
+  width: 150px;
+  box-shadow: 0px 0px 10px black;
+}
+
+/*FAKTA SPENAZ*/
+
+.fakta_spenaz{
+  margin-left: -5px;
+  margin-right: -8px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-image: url(insget_foto/IMG-20221107-WA0008.jpg);
+  background-color: white;
+  padding-top: 70px;
+  padding-bottom: 110px;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+
+.title_fakta{
+  padding-bottom: 35px;
+  margin-left: 560px;
+  text-align: center;
+  font-size: 20px;
+  border-bottom: 3px solid #F04519;
+  width: 150px;
+}
+
+.kumpulan_fakta{
+  display: flex;
+  justify-content: center;
+  column-gap: 220px;
+}
+
+.fakta_spenaz h5{
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+.fakta{
+
+}
+
+.fakta h4{
+  color: blue;
+  font-size: 25px;
+  text-align: center;
+}
+
+/*FOOTER*/
+
+.container {
+    height: 200px;
+    margin-left: -8px;
+    margin-right: -5px;
+    margin-bottom: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+    background: black;
+    font-family:'Helvetica Neue', sans-serif;
+}
+
+h1 a {
+  font-size: 40px;
+  color: blue;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.popover {
+   display: none;
+}
+
+.popover:target {
+  position: absolute;
+  right: 0;
+  width: 1201px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: waveAnimation 1s;
+}
+
+@keyframes waveAnimation{
+  0%{
+    opacity: 0%;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
+
+.container #menu{
+
+}
+
+.tulisanfooter{
+  font-size: 30px;
+}
+
+.popover .copyright {
+  opacity: 0;
+  animation: 1s fadeIn ease forwards 1s;
+}
+
+
+.popover .close::after {
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: flex;
+  z-index: 1001;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: #BF2E97;
+  color: #fff;
+  content: "×";
+  cursor: pointer;
+  opacity: 0; 
+  animation: 1s fadeIn ease forwards .5s;
+  border-radius: 100%;
+}
+
+@keyframes fadeIn {
+100% {
+  opacity: 1;
+ }
+}
+
+/*ISI FOOTER air*/
+
+.footer {
+  position: absolute;
+  height: 100px;
+  min-width: 1160px;
+  margin-left: -60px;
+  margin-bottom: -60px;
+  background: #3586ff;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 20px;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 18px;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.telepon{
+  color: white;
+  margin-right: -40px;
+}
+
+.footer .copyright {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 35px;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
